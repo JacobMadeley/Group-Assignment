@@ -1,0 +1,74 @@
+.topnav {
+    background-color: black;
+    overflow: hidden;
+    width: 100%;
+}
+
+.topnav a {
+    float: left;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 5px 10px 5px;
+    font-family: Verdana, Geneva, sans-serif;
+    line-height: 128px; /* height of volleyball logo*/
+    transition: color 0.2s linear;
+}
+
+.topnav img {
+    float: left;
+}
+
+.topnav a:hover {
+    color: #4dff88;
+}
+
+.topnav a.active {
+    color: #4dff88;
+}
+
+div.mainContainer {
+    position: relative;
+    top: 20px;
+    border: solid #003cb3;
+    width: 94%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    background: #f2f2f2;
+    text-align: justify;
+    overflow: hidden;
+}
+
+div.textBody, div.textBodyMedium, div.textBodySmall {
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+div.textHead {
+    position: relative;
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+    color:black;
+}
+
+div.textBody {
+    font-size: xx-large;
+}
+
+div.textBodyMedium {
+    font-size: 1.2em;
+}
+
+div.textBodySmall {
+    font-size: large;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(images/oceanBackgroundLarge.jpg);
+}
