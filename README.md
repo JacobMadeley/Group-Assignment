@@ -1,2 +1,2 @@
-# Group-Assingment
+# Group-Assignment
 Group Project
