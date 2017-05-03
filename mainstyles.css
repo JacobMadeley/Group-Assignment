@@ -39,6 +39,7 @@ div.mainContainer {
     background: #f2f2f2;
     text-align: justify;
     overflow: hidden;
+
 }
 
 div.musicianContainer {
@@ -61,7 +62,7 @@ div.textBody, div.textBodyMedium, div.textBodySmall {
 
 div.textHead {
     position: relative;
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 700;
     text-align: center;
     color: black;
@@ -90,13 +91,14 @@ img.left {
     margin-right: 15px;
 }
 
-img.center, img.musicianCenter{
+img.center, img.musicianCenter {
     display: block;
     margin: 0 auto;
     padding-top: 5px;
     padding-bottom: 10px;
 }
-img.musicianCenter{
+
+img.musicianCenter {
     display: inline;
 }
 
@@ -110,6 +112,7 @@ img.musicianCenter{
     overflow: hidden;
     width: 100%;
 }
+
 .fade {
     opacity: 1;
     transition: opacity .25s ease-in-out;
