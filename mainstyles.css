@@ -62,7 +62,7 @@ div.textBody, div.textBodyMedium, div.textBodySmall {
 
 div.textHead {
     position: relative;
-    font-size: 1.5em;
+    font-size: 1.6vw;
     font-weight: 700;
     text-align: center;
     color: black;
@@ -86,6 +86,11 @@ body {
     background-image: url(images/oceanBackgroundLarge.jpg);
 }
 
+img {
+    max-width: 100%; /* image scale for window resize */
+    height: auto;
+}
+
 img.left {
     float: left;
     margin-right: 15px;
@@ -100,6 +105,11 @@ img.center, img.musicianCenter {
 
 img.musicianCenter {
     display: inline;
+
+}
+
+img.verticalCenter {
+    transform: translateY(25%);
 }
 
 .col {
@@ -121,5 +131,5 @@ img.musicianCenter {
 }
 
 .fade:hover {
-    opacity: 0.7;
+    opacity: 0.5;
 }
