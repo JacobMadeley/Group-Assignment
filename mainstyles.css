@@ -9,14 +9,13 @@
     color: white;
     text-align: center;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.4vw;
     font-weight: 700;
-    padding: 5px 10px 5px;
+    padding: 5px 15px 5px;
     font-family: Verdana, Geneva, sans-serif;
     line-height: 128px; /* height of volleyball logo*/
     transition: color 0.2s linear;
 }
-
 .topnav img {
     float: left;
 }
@@ -28,14 +27,25 @@
 .topnav a.active {
     color: #4dff88;
 }
-
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+div.musicianNavigation a{
+    font-size: 1.6vw;
+    font-weight: 700;
+    color: darkblue;
+    text-decoration: none;
+    text-align: center;
+}
 div.mainContainer {
     position: relative;
     top: 20px;
     border: solid #0066cc;
-    width: 94%;
+    width: 95%;
     margin: 0 auto;
-    padding-bottom: 10px;
     background: #f2f2f2;
     text-align: justify;
     overflow: hidden;
@@ -82,6 +92,7 @@ div.textBodySmall {
 
 body {
     margin: 0;
+    height: 100%;
     font-family: Arial, sans-serif;
     background-image: url(images/oceanBackgroundLarge.jpg);
 }
@@ -93,7 +104,8 @@ img {
 
 img.left {
     float: left;
-    margin-right: 15px;
+    padding-right: 10px;
+    padding-top: 10px;
 }
 
 img.center, img.musicianCenter {
@@ -114,10 +126,16 @@ img.verticalCenter {
 
 .col {
     float: left;
-    width: 25%;
+    width: 24.4%;
     text-align: center;
+    height: 330px;
 }
-
+.colBoarder{
+    border-right: solid black;
+}
+.artistScale{
+    max-width: 55%;
+}
 .row {
     overflow: hidden;
     width: 100%;
