@@ -1,3 +1,12 @@
+a {
+    text-decoration: none;
+    color: darkblue;
+}
+
+body {
+    color: black;
+}
+
 .topnav {
     background-color: black;
     overflow: hidden;
@@ -8,7 +17,6 @@
     float: left;
     color: white;
     text-align: center;
-    text-decoration: none;
     font-size: 1.4vw;
     font-weight: 700;
     padding: 5px 15px 5px;
@@ -16,6 +24,7 @@
     line-height: 128px; /* height of volleyball logo*/
     transition: color 0.2s linear;
 }
+
 .topnav img {
     float: left;
 }
@@ -27,19 +36,21 @@
 .topnav a.active {
     color: #4dff88;
 }
-.left{
+
+.left {
     float: left;
 }
-.right{
+
+.right {
     float: right;
 }
-div.musicianNavigation a{
+
+div.subPageNavigation a {
     font-size: 1.6vw;
     font-weight: 700;
-    color: darkblue;
-    text-decoration: none;
     text-align: center;
 }
+
 div.mainContainer {
     position: relative;
     top: 20px;
@@ -64,7 +75,7 @@ div.musicianContainer {
     overflow: hidden;
 }
 
-div.textBody, div.textBodyMedium, div.textBodySmall {
+div.textBodyMedium, div.textBodySmall {
     position: relative;
     padding-left: 10px;
     padding-right: 10px;
@@ -75,11 +86,6 @@ div.textHead {
     font-size: 1.6vw;
     font-weight: 700;
     text-align: center;
-    color: black;
-}
-
-div.textBody {
-    font-size: xx-large;
 }
 
 div.textBodyMedium {
@@ -130,12 +136,15 @@ img.verticalCenter {
     text-align: center;
     height: 330px;
 }
-.colBoarder{
+
+.colBoarder {
     border-right: solid black;
 }
-.artistScale{
+
+.artistScale {
     max-width: 55%;
 }
+
 .row {
     overflow: hidden;
     width: 100%;
@@ -150,4 +159,53 @@ img.verticalCenter {
 
 .fade:hover {
     opacity: 0.5;
+}
+
+.bold {
+    font-weight: 700;
+    font-size: 1.25em;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+table.managementTable {
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 75%;
+}
+
+.tableBold {
+    font-weight: 700;
+    width: 250px;
+}
+
+table.managementTable, td.managementTable {
+    border: solid black;
+}
+
+td.managementTable {
+    height: 40px;
+    padding-left: 10px;
+    background-color: #f2f2f2;
+}
+
+td:hover.managementTable, td:hover.managementTable + td.managementTable {
+    background-color: #4dff88;
+    -webkit-transition: background-color .25s ease-in-out;
+}
+
+table.historyTable {
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 75%;
+    font-weight: 700;
+    font-size: 1.3em;
+    background-color: #f2f2f2;
+}
+
+td:hover.historyTable {
+    background-color: #4dff88;
+    -webkit-transition: background-color .25s ease-in-out;
 }
