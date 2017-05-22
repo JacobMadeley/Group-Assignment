@@ -2,11 +2,12 @@ a {
     text-decoration: none;
     color: darkblue;
 }
-
 body {
-    color: black;
+    margin: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background: url(images/repeatingWaterBackground.jpg) repeat-y;
 }
-
 .topnav {
     background-color: black;
     overflow: hidden;
@@ -17,7 +18,7 @@ body {
     float: left;
     color: white;
     text-align: center;
-    font-size: 1.4vw;
+    font-size: 1.45vw;
     font-weight: 700;
     padding: 5px 15px 5px;
     font-family: Verdana, Geneva, sans-serif;
@@ -51,10 +52,10 @@ div.subPageNavigation a {
     text-align: center;
 }
 
-div.mainContainer {
+div.mainContainer, div.mainContainerSmall {
     position: relative;
     top: 20px;
-    border: solid #0066cc;
+    border: solid #3366cc;
     width: 95%;
     margin: 0 auto;
     background: #f2f2f2;
@@ -62,11 +63,13 @@ div.mainContainer {
     overflow: hidden;
 
 }
-
+div.mainContainerSmall{
+    width: 25%;
+}
 div.musicianContainer {
     position: relative;
     top: 20px;
-    border: solid #0066cc;
+    border: solid #3366cc;
     width: 75%;
     margin: 0 auto;
     padding-bottom: 10px;
@@ -89,19 +92,14 @@ div.textHead {
 }
 
 div.textBodyMedium {
-    font-size: 1.2em;
+    font-size: 1.15vw;
 }
 
 div.textBodySmall {
     font-size: large;
 }
 
-body {
-    margin: 0;
-    height: 100%;
-    font-family: Arial, sans-serif;
-    background-image: url(images/oceanBackgroundLarge.jpg);
-}
+
 
 img {
     max-width: 100%; /* image scale for window resize */
@@ -114,40 +112,19 @@ img.left {
     padding-top: 10px;
 }
 
-img.center, img.musicianCenter {
+img.center {
     display: block;
     margin: 0 auto;
     padding-top: 5px;
     padding-bottom: 10px;
 }
 
-img.musicianCenter {
-    display: inline;
-
-}
-
 img.verticalCenter {
-    transform: translateY(25%);
-}
-
-.col {
-    float: left;
-    width: 24.4%;
-    text-align: center;
-    height: 330px;
-}
-
-.colBoarder {
-    border-right: solid black;
+    transform: translateY(-20%);
 }
 
 .artistScale {
     max-width: 55%;
-}
-
-.row {
-    overflow: hidden;
-    width: 100%;
 }
 
 .fade {
@@ -208,4 +185,34 @@ table.historyTable {
 td:hover.historyTable {
     background-color: #4dff88;
     -webkit-transition: background-color .25s ease-in-out;
+}
+
+.divTable {
+    display: table;
+    width: 100%;
+}
+
+.divTableRow {
+    display: table-row;
+}
+
+.divTableCell {
+    border-right: 2px solid #cccccc;
+    display: table-cell;
+    width: 20%;
+    text-align: center;
+    line-height: 15px;
+}
+
+.divTableCell img {
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.divTableBody {
+    display: table-row-group;
+}
+
+.divTableCell:last-child {
+    border-right: none;
 }
