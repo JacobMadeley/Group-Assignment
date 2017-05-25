@@ -18,7 +18,7 @@ body {
     float: left;
     color: white;
     text-align: center;
-    font-size: 1.45vw;
+    font-size: 1.5vw;
     font-weight: 700;
     padding: 5px 15px 5px;
     font-family: Verdana, Geneva, sans-serif;
@@ -92,7 +92,7 @@ div.textHead {
 }
 
 div.textBodyMedium {
-    font-size: 1.15vw;
+    font-size: 1.3vw;
 }
 
 div.textBodySmall {
@@ -135,7 +135,7 @@ img.verticalCenter {
 }
 
 .fade:hover {
-    opacity: 0.5;
+    opacity: 0.6;
 }
 
 .bold {
@@ -203,7 +203,6 @@ td:hover.historyTable {
 .divTableCell {
     border-right: 2px solid #cccccc;
     display: table-cell;
-    width: 20%;
     text-align: center;
     line-height: 15px;
 }
