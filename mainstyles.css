@@ -166,11 +166,11 @@ td.managementTable {
     height: 40px;
     padding-left: 10px;
     background-color: #f2f2f2;
+    -webkit-transition: background-color .3s ease-in-out;
 }
 
 td:hover.managementTable, td:hover.managementTable + td.managementTable {
     background-color: #4dff88;
-    -webkit-transition: background-color .25s ease-in-out;
 }
 
 table.historyTable {
@@ -181,10 +181,14 @@ table.historyTable {
     font-size: 1.3em;
     background-color: #f2f2f2;
 }
-
+td.historyTable{
+    width: 10.714%;
+    height: 30px;
+    font-size: 1.3vw;
+    -webkit-transition: font-size .25s ease-in-out;
+}
 td:hover.historyTable {
-    background-color: #4dff88;
-    -webkit-transition: background-color .25s ease-in-out;
+    font-size: 1.45vw;
 }
 
 .divTable {
