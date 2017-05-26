@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="mainstyles.css" rel="stylesheet" type="text/css">
+    <link rel="SHORTCUT ICON" href="images/Logos/tabIcon.jpg" type="image/x-icon"/>
+    <meta charset="UTF-8">
+    <title>Events</title>
+</head>
+<nav class="topnav">
+    <a href="index.html" class="noStyle">
+        <img src="images/Logos/mainLogo.jpg"></a>
+    <a href="index.html">Home</a>
+    <a href="aboutUs.html">About Us</a>
+    <a href="joinUs.html">Join Us</a>
+    <a href="artists.html">Artists</a>
+    <a class="active" href="gallery.html">Gallery</a>
+    <a href="donate.html">Donate</a>
+</nav>
+<body>
+<div class="imageContainerLeft">
+    <img class="mySlides center " src="images/Gallery/People/P1.jpg" width="167" height="250">
+    <img class="mySlides center " src="images/Gallery/People/P2.jpg" width="358" height="250">
+    <img class="mySlides center " src="images/Gallery/People/P3.jpg" width="224" height="250">
+    <img class="mySlides center " src="images/Gallery/People/P4.jpg" width="189" height="250">
+</div>
+<div class="imageContainerRight">
+    <img class="mySlides1 center " src="images/Gallery/People/P5.jpg" width="211" height="250">
+    <img class="mySlides1 center " src="images/Gallery/People/P6.jpg" width="313" height="250">
+    <img class="mySlides1 center " src="images/Gallery/People/P7.jpg" width="275" height="250">
+</div>
+<div class="imageContainerLeft">
+    <img class="mySlides2 center " src="images/Gallery/Orchestra/orchestra-1.jpg" width="356" height="250">
+    <img class="mySlides2 center " src="images/Gallery/Orchestra/orchestra-2.jpg" width="413" height="250">
+    <img class="mySlides2 center " src="images/Gallery/Orchestra/orchestra-3.jpg" width="418" height="250">
+</div>
+<div class="imageContainerRight">
+    <img class="mySlides3 center " src="images/Gallery/Orchestra/orchestra-4.jpg" width="365" height="250">
+    <img class="mySlides3 center " src="images/Gallery/Orchestra/orchestra-5.jpg" width="375" height="250">
+    <img class="mySlides3 center " src="images/Gallery/Orchestra/orchestra-6.jpg" width="375" height="250">
+
+</div>
+<div class="mainContainerSmall">
+    <div class="textHead">
+        Thank You To Our Sponsors
+    </div>
+</div>
+<br><br>
+<div class="imageContainerCenter">
+
+    <img class="mySlides4 center sponsorOpacity " src="images/Gallery/Sponsors/ACVClogo.jpg" width="591" height="258">
+    <img class="mySlides4 center sponsorOpacity" src="images/Gallery/Sponsors/AFCMlogo-25th.gif" width="295"
+         height="100">
+    <img class="mySlides4 center sponsorOpacity" src="images/Gallery/Sponsors/asap-logo.png" width="265" height="131">
+    <img class="mySlides4 center sponsorOpacity" src="images/Gallery/Sponsors/bunnings-warehouse-web.jpg" width="350"
+         height="50">
+    <img class="mySlides4 center sponsorOpacity" src="images/Gallery/Sponsors/cowboys-logo-web.jpg" width="150"
+         height="150">
+    <img class="mySlides4 center sponsorOpacity" src="images/Gallery/Sponsors/GG%20logo%20for%20email.jpg" width="354"
+         height="90">
+    <img class="mySlides4 center sponsorOpacity" src="images/Gallery/Sponsors/kaptivmedialogo-trans.png" width="327"
+         height="94">
+    <img class="mySlides4 center sponsorOpacity" src="images/Gallery/Sponsors/QNICKEL.jpg" width="312" height="250">
+    <img class="mySlides4 center sponsorOpacity" src="images/Gallery/Sponsors/racq-logo-web.jpg" width="400"
+         height="185">
+    <img class="mySlides4 center sponsorOpacity" src="images/Gallery/Sponsors/rsl-qld-web.jpg" width="119" height="150">
+    <img class="mySlides4 center sponsorOpacity" src="images/Gallery/Sponsors/SOE-new-logo-3.jpg" width="498"
+         height="500">
+    <img class="mySlides4 center sponsorOpacity" src="images/Gallery/Sponsors/sturt-business-centre-logo.png"
+         width="347" height="49">
+    <img class="mySlides4 center sponsorOpacity" src="images/Gallery/Sponsors/the-keyboard-shop-web.jpg" width="250"
+         height="102">
+    <img class="mySlides4 center sponsorOpacity" src="images/Gallery/Sponsors/townsville-council-logo.jpg" width="96"
+         height="124">
+</div>
+<script>
+    var slideIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > x.length) {
+            slideIndex = 1
+        }
+        x[slideIndex - 1].style.display = "block";
+        setTimeout(carousel, 6000); // Change image every 6 seconds
+    }
+
+    var slideIndex1 = 0;
+    carousel1();
+
+    function carousel1() {
+        var i;
+        var x = document.getElementsByClassName("mySlides1");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        slideIndex1++;
+        if (slideIndex1 > x.length) {
+            slideIndex1 = 1
+        }
+        x[slideIndex1 - 1].style.display = "block";
+        setTimeout(carousel1, 6000); // Change image every 6 seconds
+    }
+
+    var slideIndex2 = 0;
+    carousel2();
+
+    function carousel2() {
+        var i;
+        var x = document.getElementsByClassName("mySlides2");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        slideIndex2++;
+        if (slideIndex2 > x.length) {
+            slideIndex2 = 1
+        }
+        x[slideIndex2 - 1].style.display = "block";
+        setTimeout(carousel2, 6000); // Change image every 6 seconds
+    }
+
+    var slideIndex3 = 0;
+    carousel3();
+
+    function carousel3() {
+        var i;
+        var x = document.getElementsByClassName("mySlides3");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        slideIndex3++;
+        if (slideIndex3 > x.length) {
+            slideIndex3 = 1
+        }
+        x[slideIndex3 - 1].style.display = "block";
+        setTimeout(carousel3, 6000); // Change image every 6 seconds
+    }
+
+    var slideIndex4 = 0;
+    carousel4();
+
+    function carousel4() {
+        var i;
+        var x = document.getElementsByClassName("mySlides4");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        slideIndex4++;
+        if (slideIndex4 > x.length) {
+            slideIndex4 = 1
+        }
+        x[slideIndex4 - 1].style.display = "block";
+        setTimeout(carousel4, 2500); // Change image every 2.5 seconds
+    }
+</script>
+
+</body>
+<br>
+<div>
+    <a href="index.html">
+        <img class="center" src="images/Logos/mainLogo.jpg">
+    </a>
+</div>
+</html>

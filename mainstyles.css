@@ -2,12 +2,14 @@ a {
     text-decoration: none;
     color: darkblue;
 }
+
 body {
     margin: 0;
     height: 100%;
     font-family: Arial, sans-serif;
     background: url(images/repeatingWaterBackground.jpg) repeat-y;
 }
+
 .topnav {
     background-color: black;
     overflow: hidden;
@@ -46,6 +48,10 @@ body {
     float: right;
 }
 
+.slightRight {
+    padding-right: 50px;
+}
+
 div.subPageNavigation a {
     font-size: 1.6vw;
     font-weight: 700;
@@ -63,9 +69,11 @@ div.mainContainer, div.mainContainerSmall {
     overflow: hidden;
 
 }
-div.mainContainerSmall{
+
+div.mainContainerSmall {
     width: 25%;
 }
+
 div.musicianContainer {
     position: relative;
     top: 20px;
@@ -78,12 +86,6 @@ div.musicianContainer {
     overflow: hidden;
 }
 
-div.textBodyMedium, div.textBodySmall {
-    position: relative;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
 div.textHead {
     position: relative;
     font-size: 1.6vw;
@@ -93,13 +95,9 @@ div.textHead {
 
 div.textBodyMedium {
     font-size: 1.3vw;
+    padding-left: 5px;
+    padding-right: 5px;
 }
-
-div.textBodySmall {
-    font-size: large;
-}
-
-
 
 img {
     max-width: 100%; /* image scale for window resize */
@@ -110,6 +108,7 @@ img.left {
     float: left;
     padding-right: 10px;
     padding-top: 10px;
+    padding-left: 5px;
 }
 
 img.center {
@@ -130,7 +129,6 @@ img.verticalCenter {
 .fade {
     opacity: 1;
     transition: opacity .25s ease-in-out;
-    -moz-transition: opacity .25s ease-in-out;
     -webkit-transition: opacity .25s ease-in-out;
 }
 
@@ -181,12 +179,14 @@ table.historyTable {
     font-size: 1.3em;
     background-color: #f2f2f2;
 }
-td.historyTable{
+
+td.historyTable {
     width: 10.714%;
-    height: 30px;
+    height: 35px;
     font-size: 1.3vw;
     -webkit-transition: font-size .25s ease-in-out;
 }
+
 td:hover.historyTable {
     font-size: 1.45vw;
 }
@@ -218,4 +218,79 @@ td:hover.historyTable {
 
 .divTableCell:last-child {
     border-right: none;
+}
+
+.FormHeadings {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.3vw;
+}
+
+form {
+    text-align: center;
+    width: 15%;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    width: 100%;
+    float: left;
+    cursor: pointer;
+}
+
+label:before {
+    display: block;
+    content: " ";
+    padding-top: 3px;
+}
+
+input {
+    margin-bottom: 8px;
+}
+
+.formButtonsLeft {
+    width: 70%;
+}
+
+.imageContainerLeft {
+    float: left;
+    padding-left: 5%;
+    width: 45%;
+    height: 260px;
+}
+
+.imageContainerRight {
+    float: right;
+    padding-right: 5%;
+    width: 45%;
+    height: 260px;
+}
+
+.imageContainerCenter {
+    margin: 0 auto;
+    width: 591px;
+    height: 500px;
+}
+
+.sponsorOpacity {
+    background-color: #f2f2f2;
+}
+
+.counter {
+    background-color: #4dff88;
+    color: black;
+    font-size: 1vw;
+    padding: 2px 5px;
+    line-height: 10px;
+    height: 14px;
+    text-align: center;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    font-weight: 400;
+}
+
+textarea {
+    height: 100px;
+    width: 90%;
 }

@@ -10,10 +10,10 @@
     <a href="index.html" class="noStyle">
         <img src="images/Logos/mainLogo.jpg"></a>
     <a href="index.html">Home</a>
-    <a href="events.html">Events</a>
     <a class="active" href="aboutUs.html">About Us</a>
     <a href="joinUs.html">Join Us</a>
     <a href="artists.html">Artists</a>
+    <a href="gallery.html">Gallery</a>
     <a href="donate.html">Donate</a>
 </nav>
 <body>
@@ -154,15 +154,34 @@
         </p>
     </div>
     <div class="textBodyMedium textCenter right">
-        <p>
-            <span class="bold">
-                Leave Us A Message
-            </span>
-        </p>
+        <span class="bold ">Leave Us A Message</span>
+        <br>
+        <form action="#" id="usrform" class="slightRight">
+            Name: <input type="text" name="usrname">
+            <input type="submit">
+        </form>
+        <div>
+            <textarea onKeyUp="count_it()" id="textarea" name="text"
+                      maxlength="500"></textarea>
+            <span id="count" class="counter"></span>
+            <br>
+        </div>
     </div>
-
+    <script>
+        var el_t = document.getElementById('textarea');
+        var length = el_t.getAttribute("maxlength");
+        var el_c = document.getElementById('count');
+        el_c.innerHTML = length;
+        el_t.onkeyup = function () {
+            document.getElementById('count').innerHTML = (length - this.value.length);
+        };
+    </script>
 </div>
-<br>
-<br>
 </body>
+<br>
+<div>
+    <a href="index.html">
+        <img class="center" src="images/Logos/mainLogo.jpg">
+    </a>
+</div>
 </html>
